@@ -5,6 +5,7 @@ erDiagram
     int id PK
     int sauna_id FK
     int user_id FK
+    string title
     string comment
     decimal review_rating
     datetime visited_at
