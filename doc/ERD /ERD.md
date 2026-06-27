@@ -25,7 +25,7 @@ erDiagram
     int id PK
     int visit_id FK
     string image_path
-    int sort_order
+    int seq_no
     datetime created_at
     datetime updated_at
   }
@@ -48,25 +48,11 @@ erDiagram
 
   users {
     int id PK
-    string user_code
     string email
     string name
     datetime created_at
     datetime updated_at
   }
-
-  periods {
-    int id PK
-    string type
-    string key
-    string name
-    datetime starts_at
-    datetime ends_at
-    datetime created_at
-    datetime updated_at
-  }
-
-
 
   users ||--o{ visits : makes
   saunas ||--o{ visits : has
